@@ -29,14 +29,13 @@ assert(Shape3D, 'Shape3D API not present, check device capabilities')
 
 -- Creating viewer
 local viewer = View.create()
-viewer:setID('viewer3D')
 
 -- Setting up graphical overlay attributes
 local shapeDecoration = View.ShapeDecoration.create()
 shapeDecoration:setLineColor(0, 255, 0) -- Green
 shapeDecoration:setPointSize(16)
-shapeDecoration:setLineWidth(5)
-shapeDecoration:setFillColor(0, 255, 0, 150) -- Transparent green
+shapeDecoration:setLineWidth(3)
+shapeDecoration:setFillColor(0, 200, 0) -- Darker Green
 
 local intersectionDecoration = View.ShapeDecoration.create()
 intersectionDecoration:setLineColor(255, 0, 0) -- Red
