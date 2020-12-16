@@ -28,7 +28,7 @@ print('AppEngine Version: ' .. Engine.getVersion())
 assert(Shape3D, 'Shape3D API not present, check device capabilities')
 
 -- Creating viewer
-local viewer = View.create()
+local viewer = View.create("viewer3D1")
 
 -- Setting up graphical overlay attributes
 local shapeDecoration = View.ShapeDecoration.create()
